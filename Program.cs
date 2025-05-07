@@ -2,17 +2,27 @@
 
 class Program
 {
-    
-//    Step 2 - Variables & assignment statements:
-//    Change the program so that it uses two variables - one for your name, and one for the year - and prints "Happy New Year (yourname), (the year)!!".
+/*    Getting batter at comments..
+ 
+   Step 3 - User input:
+   Change the program so that both the name and year are collected through user-input (don't forget your prompts).
+*/
     static void Main(string[] args)
     {
         
         // Declare name and current year in variables
-        string userName = "SharkByteCodes"; // github usernme for privacy
-        int currentYear = 2025;
+        string userName = ""; // empty string, not null (I think).
+        int currentYear = 0; // non-magical number.
         
-        //
+        // Prompt user for username
+        Console.WriteLine("What's your name?");
+        userName = Console.ReadLine(); // collect user input
+        
+        // Prompt user for year
+        Console.WriteLine("What's the current year?");
+        currentYear = int.Parse(Console.ReadLine()); // Parse user input (string) int.
+        
+        
         Console.WriteLine("Happy New Year " + userName + ", " + currentYear + "!!");
     }
 }
