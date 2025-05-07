@@ -8,8 +8,9 @@ class Program
 */
     public static void Main(string[] args)
     {
-        loopYear(); // TODO: what is this mess? I have 10 warnings..
-
+        //loopYear(); // TODO: what is this mess? I have 10 warnings..
+        guessingGame();
+        
 
     }
 
@@ -49,6 +50,53 @@ class Program
 
         return null; // TODO: learn why this is is a bad idea.
     }
-   
+
+    static string guessingGame()
+    {
+        /*
+         * Exercise 2 - Guessing Game
+           
+           Generate a random number between 1 and 100.
+           Ask the user to guess the secret random number.
+           Tell the user if their guess was correct, too low, or too high.
+           As long as they don't guess the correct number, keep doing this.
+           When they guess the right number, tell them how many guesses it took!
+         */
+        
+        // Generate a random number
+        int randomNumber = new Random().Next(1, 100);
+        int userGuessNumber = 0; // start with zero, no magic numbers
+        
+        Console.WriteLine("(debug): The random number is: " + randomNumber); // for debug
+        
+        //Prompt user for random number.
+        Console.WriteLine("Please guess a number between 1 and 100.");
+        userGuessNumber = int.Parse(Console.ReadLine());
+
+        while (userGuessNumber < 1 || userGuessNumber > 10)
+        {
+            if (userGuessNumber != randomNumber) // user guess doesnt match random number
+            {
+                // Prompt user for new number
+                Console.WriteLine("Your guess is not in range between 1 and 100.\n" +
+                                  "Please try again: ");
+                userGuessNumber = int.Parse(Console.ReadLine());
+            }
+
+            if (userGuessNumber == randomNumber) // user guess matches random number
+            {
+                    Console.WriteLine("Hooray!! You guessed it!!");
+                    break;
+            }
+                
+        }
+        
+            
+        
+        
+        
+        return null; //TODO: same as above..
+    }
+    
 }
 
