@@ -6,14 +6,7 @@ class Program
    Step 5 - If-statements:
    Change the program so that leap-years are somehow highlighted!!!
    
-   Happy New Year Aaron, 1976!! (leap year, yay!)
-   Happy New Year Aaron, 1977!!
-   Happy New Year Aaron, 1978!!
-   ...
-   Happy New Year Aaron, 2021!! 
-   Happy New Year Aaron, 2022!!
-   Happy New Year Aaron, 2023!!
-   Happy New Year Aaron, 2024!! (leap year, yay!)
+... clipped ...
 */
     static void Main(string[] args)
     {
