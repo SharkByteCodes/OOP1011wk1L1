@@ -2,9 +2,11 @@
 
 class Program
 {
-/*   Methods
-   Step 6 (optional) - Methods:
-   Change the program to use at least one method.
+/*
+ * Week 1 lecture one consists of 3 major activities
+ * 1: building up to a leap year loop ** Complete
+ * 2: build a number guessing game. ** Complete
+ * 3: Red vs. Blue game TODO: Build and complete game
 */
     public static void Main(string[] args)
     {
@@ -13,7 +15,8 @@ class Program
         
 
     }
-
+    
+    // exercise 1
     static string loopYear()
     {
 
@@ -51,6 +54,7 @@ class Program
         return null; // TODO: learn why this is is a bad idea.
     }
 
+    // exercise 2
     static string guessingGame()
     {
         /*
